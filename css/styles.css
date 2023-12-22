@@ -1,1 +1,117 @@
 /* font-family: 'Diphylleia', serif; */
+
+:root {
+    /** colours **/
+    --yellow: #FED766;
+    --lt-seafoam-green: #ecf9f6;
+    --seafoam-green: #43C6AC;
+    --md-blue: #191654;
+    --dk-blue: #0C0B2A;
+    --blue-grey: #6B717E;
+
+    /** typography **/
+    --headings: 'Diphylleia', serif;
+    --body: 'Rubik', sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    top: 0;
+    left: -9999999px;
+    width: 0.1rem;
+    height: 0.1rem;
+    visibility: hidden;
+}
+
+body {
+    font-family: var(--body);
+}
+
+h1,
+h2 {
+    font-family: var(--headings);
+}
+
+.inner-container {
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+nav {
+    box-shadow: var(--dk-blue);
+}
+
+/* Toggle  */
+
+.toggle-btn svg {
+    width: 2rem;
+    color: #fff;
+    /* margin-right: 2rem; */
+    margin-left: 8rem;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.toggle-btn svg path {
+    fill: var(--md-blue);
+}
+
+.toggle-btn svg:hover {
+    color: var(--seafoam-green);
+}
+
+nav {
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav li a {
+    display: block;
+}
+
+.logo {
+    max-width: 6rem;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+}
+
+/* Hero Banner */
+
+.hero-banner {
+    background: url('../img/full-moon.jpg') center / cover no-repeat fixed;
+    color: var(--lt-seafoam-green);
+    height: 50rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.hero-banner h2 {
+    padding: 5rem 0;
+}
+
+.hero-banner p {
+    font-family: var(--headings);
+}
